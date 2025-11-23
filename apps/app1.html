@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>App 1 - Calculadora</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<header>
+    <h1>Mini Calculadora</h1>
+</header>
+
+<input id="a" type="number"> +
+<input id="b" type="number">
+<button onclick="calc()">=</button>
+
+<h2 id="res"></h2>
+
+<script>
+function calc(){
+    let a = Number(document.getElementById("a").value);
+    let b = Number(document.getElementById("b").value);
+    document.getElementById("res").innerText = a + b;
+}
+</script>
+
+</body>
+</html>
