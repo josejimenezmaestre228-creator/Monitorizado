@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Juego 1 - Clicker</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+<header>
+    <h1>Juego 1: Clicker</h1>
+</header>
+
+<h2>Pulsa para sumar puntos:</h2>
+
+<h1 id="contador">0</h1>
+<button onclick="sumar()" style="padding:20px;font-size:20px;">CLICK</button>
+
+<script>
+let puntos = 0;
+function sumar(){
+    puntos++;
+    document.getElementById("contador").innerText = puntos;
+}
+</script>
+
+</body>
+</html>
